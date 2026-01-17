@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import * as React from "react";
 
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
@@ -42,7 +42,11 @@ export function Header() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {isMenuOpen ? (
+            <X className="h-5 w-5" />
+          ) : (
+            <Menu className="h-5 w-5" />
+          )}
         </Button>
       </div>
 

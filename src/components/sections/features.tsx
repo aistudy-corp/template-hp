@@ -19,14 +19,12 @@ const features = [
   {
     icon: Clock,
     title: "24時間サポート",
-    description:
-      "専門スタッフが24時間体制でお客様をサポートいたします。",
+    description: "専門スタッフが24時間体制でお客様をサポートいたします。",
   },
   {
     icon: Users,
     title: "チーム連携",
-    description:
-      "複数人での共同作業を効率的に行える機能を提供しています。",
+    description: "複数人での共同作業を効率的に行える機能を提供しています。",
   },
 ];
 

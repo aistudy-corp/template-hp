@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Company Name",
   description: "あなたのビジネスを加速させる、次世代のソリューション。",
-  url: process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
+  url: process.env["NEXT_PUBLIC_APP_URL"] ?? "http://localhost:3000",
   ogImage: "/og.png",
   mainNav: [
     { title: "サービス", href: "/services" },

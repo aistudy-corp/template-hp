@@ -1,10 +1,10 @@
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { ThemeProvider } from "@/components/theme-provider";
+import { siteConfig } from "@/config/site";
+
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-
-import { ThemeProvider } from "@/components/theme-provider";
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
-import { siteConfig } from "@/config/site";
 
 import "./globals.css";
 
