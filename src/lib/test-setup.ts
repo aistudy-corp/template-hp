@@ -2,6 +2,7 @@ import "@testing-library/jest-dom/vitest";
 
 import { afterEach, vi } from "vitest";
 import { cleanup } from "@testing-library/react";
+import { createElement } from "react";
 
 // Cleanup after each test
 afterEach(() => {
@@ -33,8 +34,8 @@ vi.mock("next/image", () => ({
     alt: string;
     [key: string]: unknown;
   }) => {
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img src={src} alt={alt} {...props} />;
+    // Use createElement instead of JSX to keep .ts extension
+    return createElement("img", { src, alt, ...props });
   },
 }));
 
