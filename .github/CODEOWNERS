@@ -1,0 +1,12 @@
+# CODEOWNERS - Define code ownership for automatic review requests
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+* @aistudy-corp/developers
+
+# GitHub Actions and CI/CD
+.github/ @aistudy-corp/platform
+
+# Security-sensitive files
+.github/workflows/ @aistudy-corp/platform @aistudy-corp/security
+.github/CODEOWNERS @aistudy-corp/platform
